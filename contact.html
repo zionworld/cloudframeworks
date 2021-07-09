@@ -91,7 +91,32 @@
         </div>
         <div class="row block-9">
           <div class="col-md-6 pr-md-5">
-            <form name="contact" method="POST" data-netlify-recaptcha="true" netlify-honeypot="bot-field" data-netlify="true">
+            
+            <form name="contact" method="POST" data-netlify="true">
+              <p>
+                <label>Your Name: <input type="text" name="name" /></label>   
+              </p>
+              <p>
+                <label>Your Email: <input type="email" name="email" /></label>
+              </p>
+              <p>
+                <label>Subject: <input type="subject" name="subject" /></label>
+              </p>
+              <!-- <p>
+                <label>Your Role: <select name="role[]" multiple>
+                  <option value="leader">Leader</option>
+                  <option value="follower">Follower</option>
+                </select></label>
+              </p> -->
+              <p>
+                <label>Message: <textarea name="message"></textarea></label>
+              </p>
+              <p>
+                <button type="submit">Send Message</button>
+              </p>
+            </form>
+
+            <!-- <form name="contact" method="POST" data-netlify-recaptcha="true" netlify-honeypot="bot-field" data-netlify="true">
               <p class="hidden">
                 <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
               </p>
@@ -114,7 +139,7 @@
               <!-- <div class="form-group">
                 <input type="submit" value="Send Message" class="btn btn-primary py-3 px-5">
               </div> -->
-            </form>
+            </form> -->
           </div>
           
           <div class="col-md-6"><div class="gmap_canvas"><iframe width="500" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=toronto%2C%20on&t=k&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></div><style>.mapouter{position:relative;text-align:right;height:500px;width:600px;}.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}</style></div>
